@@ -28,3 +28,9 @@ põhikasutamine:
 
 a) pane fail jälgimisele:
 git add failinimi
+
+pushimine:
+git add failinimi
+git commit -m “muudatuse kirjeldus” 
+git push -u origin master
+
