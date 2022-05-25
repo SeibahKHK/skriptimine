@@ -1,18 +1,18 @@
-1. Kui git ei ole paigaldatud - paigalda.
-su
-apt install git
-exit
+# root kasutajana:
+installi - apt install git
+# tavakasutajana:
+esmakordselt:
 
-2. Konfigureeri oma kasutaja alt
+a) Konfigureeri oma kasutaja alt
 git config --global user.name "OmaEes Perenimi"
 git config --global user.email omameil@khk.ee
 git config --global core.editor nano
 
-3. Loo kaust, mille failid vajavad jälgimist
+b) Loo kaust, mille failid vajavad jälgimist
 mkdir skriptimine
 
-4. Sisene antud kataloogi
+c) Sisene antud kataloogi
 cd skriptimine
 
-5. Tee lokaalne git repo antud kaustas muudatuste jälgimiseks
+d) Tee lokaalne git repo antud kaustas muudatuste jälgimiseks
 git init
