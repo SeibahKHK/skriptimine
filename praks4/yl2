@@ -1,0 +1,17 @@
+#!/bin/bash
+# Kui tekivad reisijad, kes ei mahu täisbusside sisse,
+# siis suurendatakse busside arv ühe võrra.
+
+
+read -p "Sisesta reisijate arv:" inimesed
+read -p "Sisesta kohtade arv: " istekohad
+
+bussid=$(($inimesed/$istekohad))
+ulejaanud=$(($inimesed%$istekohad))
+ #kokku taitud busse arvutus 
+if [ $ulejaanud -gt 0 ]
+then
+  bussid=$((bussid+1))
+fi
+
+echo "Kokku on vaja $bussid taisbussi"
