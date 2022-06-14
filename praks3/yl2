@@ -1,0 +1,7 @@
+#!/bin/bash
+# skript mis koostab lause sellest, mis president valiti sel aastal mis siin skriptis on
+aasta='2016'
+president='Kersti Kaljulaid'
+lause_keskosa='. aastal valiti Eesti presidendiks '
+lause="$aasta$lause_keskosa$president"
+echo "$lause"
