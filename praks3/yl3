@@ -1,0 +1,12 @@
+#!/bin/bash
+# skript, mis arvutab mitu astronoomilist tundi sa õppima pead oma EAP ja nädalatega.
+
+EAP='26'
+echo -n "Palun sisesta ainepunktide arv: "
+read EAPd
+echo -n "Palun sisesta nädalate arv: "
+read nadal
+
+aeg=$(( $EAP * $EAPd / $nadal ))
+
+echo "Teile on arvestatud nädala kohta $aeg astronoomilist tundi."
