@@ -1,0 +1,12 @@
+#!/bin/bash
+# busside täituvuse arvutamine
+
+echo -n "Sisesta bussi saabuvate reisijate arv: "
+read inimesed
+echo -n "Sisesta bussi istekohtade arv"
+read istekohad
+
+arv=$(($inimesed/$istekohad))
+ulejaanud=$(($inimesed%$istekohad))
+
+echo "Kokku taitub busse $arv ja ilma kohata jääb inimesi $ulejaanud"
