@@ -1,0 +1,11 @@
+#!/bin/bash
+#skript väljastab kasutajale info tänase kuupäeva kohta
+
+echo
+echo -n "Today is "
+date +"%A, %B %d %Y"
+echo -n "Time is "
+date +"%R"
+echo
+echo -n "Calendar of"
+cal
